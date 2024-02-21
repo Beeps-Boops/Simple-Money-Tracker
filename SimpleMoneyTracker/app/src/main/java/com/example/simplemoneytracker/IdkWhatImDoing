@@ -1,0 +1,127 @@
+TODO List:
+
+Fixes:
+
+Quality Updates:
+
+Add explanatory text to empty screens explaining how they work
+
+
+
+
+
+old code for save
+
+//            Column(
+//                modifier = Modifier
+//                    .fillMaxWidth()
+//                    .padding(innerPadding)
+//            ) {
+//                Row(
+//                    modifier = Modifier
+//                        .align(Alignment.CenterHorizontally)
+//                ) {
+//                    Card(
+//                        modifier = Modifier
+//                            .align(Alignment.CenterVertically)
+//                            .padding(dimensionResource(id = R.dimen.padding_16dp)),
+//                    ) {
+//                        Text(
+//                            text = Months.fromNumber(viewModel.dateToUse.month).toString(),
+//                            fontSize = 30.sp,
+//                            modifier = Modifier
+//                                .padding(
+//                                    dimensionResource(id = R.dimen.padding_16dp)
+//                                )
+//                                .clickable { viewModel.displayDatePicker = true }
+//                        )
+//                    }
+//                    Card(
+//                        modifier = Modifier
+//                            .align(Alignment.CenterVertically)
+//                            .padding(dimensionResource(id = R.dimen.padding_16dp)),
+//                    ) {
+//                        Text(
+//                            text = viewModel.dateToUse.year.toString(),
+//                            fontSize = 30.sp,
+//                            modifier = Modifier
+//                                .padding(
+//                                    dimensionResource(id = R.dimen.padding_16dp)
+//                                )
+//                                .clickable { viewModel.displayDatePicker = true }
+//                        )
+//                    }
+//                }
+//                ElevatedCard(
+//                    modifier = Modifier
+//                        .align(Alignment.CenterHorizontally)
+//                        .padding(bottom = dimensionResource(id = R.dimen.padding_40dp)),
+//                    elevation = CardDefaults.cardElevation(defaultElevation = 5.dp)
+//                ) {
+//                    PieChart(
+//                        values = viewModel.pieValues,
+//                        colors = colors,
+//                        modifier = Modifier
+//                            .padding(dimensionResource(id = R.dimen.padding_16dp))
+//                    )
+//                }
+//
+//                ElevatedCard(
+//                    modifier = Modifier
+//                        .align(Alignment.CenterHorizontally),
+//                    elevation = CardDefaults.cardElevation(defaultElevation = 5.dp)
+//                ) {
+//                    Box(
+//                        modifier = Modifier
+//                            .width(200.dp)
+//                            .height(100.dp)
+//                            .background(
+//                                color = colorResource(
+//                                    id = if (viewModel.netMoney >= 0) R.color.green_soft else R.color.red_soft
+//                                )
+//                            )
+//                    ) {
+//                        Text(
+//                            text = viewModel.getFormattedMoney(viewModel.netMoney),
+//                            fontSize = 40.sp,
+//                            modifier = Modifier
+//                                .align(Alignment.Center)
+//                        )
+//                    }
+//                }
+//                Row(
+//                    horizontalArrangement = Arrangement.SpaceEvenly,
+//                    modifier = Modifier
+//                        .fillMaxSize()
+//                ) {
+//
+//                    ElevatedButton(
+//                        onClick = { navigateToCategory("false", viewModel.dateToUse.year, viewModel.dateToUse.month) },
+//                        modifier = Modifier
+//                            .align(Alignment.CenterVertically)
+//                            .width(dimensionResource(id = R.dimen.button_width))
+//                            .height(dimensionResource(id = R.dimen.button_height)),
+//                        elevation = ButtonDefaults.elevatedButtonElevation(defaultElevation = 5.dp)
+//                    ) {
+//                        Text(
+//                            text = stringResource(id = R.string.button_income),
+//                            fontSize = 18.sp,
+//                            textAlign = TextAlign.Center
+//                        )
+//                    }
+//                    ElevatedButton(
+//                        onClick = { navigateToCategory("true", viewModel.dateToUse.year, viewModel.dateToUse.month) },
+//                        modifier = Modifier
+//                            .align(Alignment.CenterVertically)
+//                            .width(dimensionResource(id = R.dimen.button_width))
+//                            .height(dimensionResource(id = R.dimen.button_height)),
+//                        elevation = ButtonDefaults.elevatedButtonElevation(defaultElevation = 5.dp)
+//                    ) {
+//                        Text(
+//                            text = stringResource(id = R.string.button_expenses),
+//                            fontSize = 16.sp,
+//                            textAlign = TextAlign.Center
+//                        )
+//                    }
+//                }
+//            }

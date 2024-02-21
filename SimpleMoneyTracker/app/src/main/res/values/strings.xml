@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Simple Money Tracker</string>
+    <string name="delete_source_title">Delete:</string>
+    <string name="delete_source_checkbox">Delete copies of this on other months?</string>
+    <string name="delete_source_warning">Warning. If a copy of this exists on the previous month, this will be recreated the next time the app opens if it is set to repeat.</string>
+
+    <string name="button_delete">Delete</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_add">Add</string>
+    <string name="button_create">Create</string>
+    <string name="button_income">Income</string>
+    <string name="button_expenses">Expenses</string>
+    <string name="button_set_date">Set Date</string>
+
+    <string name="next_update">Next Update</string>
+    <string name="never_update">Never.</string>
+    <string name="finished_update">Finished.</string>
+
+    <string name="loading">Loading...</string>
+
+    <string name="enter_category_name">Enter Category Name.</string>
+    <string name="delete_category_warning">Delete Category:</string>
+
+    <string name="item_entry_name_of_source">Name</string>
+    <string name="item_entry_amount">Amount</string>
+    <string name="item_entry_frequency_title">Frequency</string>
+    <string name="item_entry_frequency_once">Once</string>
+    <string name="item_entry_frequency_daily">Daily</string>
+    <string name="item_entry_frequency_weekly">Weekly</string>
+    <string name="item_entry_frequency_biweekly">2 Weeks</string>
+    <string name="item_entry_frequency_monthly">Monthly</string>
+    <string name="item_entry_copy_warning_title">Warning!</string>
+    <string name="item_entry_copy_warning_content">This might create multiple copies of the entry for future months.</string>
+
+    <string name="tutorial_month_selection_left">Click on the month or year to change the date.</string>
+    <string name="tutorial_month_selection_right">You can edit or view previous months here.</string>
+
+    <string name="tutorial_add_category">Click here to add a new category, then click the category you made to add to it.</string>
+</resources>
